@@ -16,6 +16,7 @@ const cardStyle = {
   color: "white",
   margin: "10px",
 };
+
 export class Movie extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +24,7 @@ export class Movie extends Component {
       movies: [],
       addModalShow: false,
       editModalShow: false,
-      // State for holding edit details
+      
       MovieID: null,
       Name: "",
       Categories: "",
@@ -81,7 +82,9 @@ export class Movie extends Component {
       "Home Alone 2" : HomeAlone2,
       "Sponge Bob" : SpongeBob
     };
-        const defaultMovies = [
+
+    
+    const defaultMovies = [
       { MovieID: 1, Name: "Suicide Squad" },
       { MovieID: 2, Name: "Black Widow" },
       { MovieID: 3, Name: "Fast and Furious" },
@@ -95,7 +98,7 @@ export class Movie extends Component {
     const displayMovies = movies.length >= 8 ? movies.slice(0, 8) : defaultMovies;
 
     return (
-      <div>
+      <div className="page-background"> {/*  */}
         <div className="container">
           <h3 className="m-3 d-flex justify-content-center">Movies</h3>
         </div>
@@ -167,7 +170,7 @@ export class Movie extends Component {
                 <Card style={cardStyle}>
                   <Card.Img
                     variant="top"
-                    src={moviePosters[movie.Name] || Theforever} // Use a default image if the movie name is not found
+                    src={moviePosters[movie.Name] || Theforever} 
                     alt={movie.Name}
                     style={{ height: "250px", objectFit: "cover" }}
                   />
@@ -183,4 +186,5 @@ export class Movie extends Component {
     );
   }
 }
+
 
