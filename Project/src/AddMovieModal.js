@@ -7,11 +7,10 @@ export class AddMovieModal extends Component {
     this.state = { deps: [] };
     this.state = { Categories: [] };
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.handleFileSelected=this.handleFileSelected.bind(this);
+
   }
 
-  // photofilename = "anonymous.png";
-  // imagesrc = process.env.REACT_APP_PHOTOPATH+this.photofilename;
+
 
   componentDidMount() {
     fetch(process.env.REACT_APP_API + "movie")
