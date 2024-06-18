@@ -35,42 +35,50 @@ class Register extends Component {
 
     render() {
         return (
-            <section id="contact" className="py-5 h-100">
-                <div className="container text-center">
-                    <h1 className="display-4 pb-1 border-bottom w-25 mx-auto pt-5 text-dark">Register</h1>
-                    <div className="row mx-auto">
-                        <div className="col-sm-12 col-md-6 col-lg-6 mx-auto">
-                            <form className="p-5  my-3 " method="post" onSubmit={this.handleSubmit}>
-                                <div className="form-group text-left" controlid='name'>
-                                    <input type="text" name="name" className="form-control" required defaultValue={this.props.name} placeholder="Name..."></input>
+            <section id="register" className="py-5 bg-light">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-6">
+                            <div className="card shadow-lg rounded-4 border-0">
+                                <div className="card-body p-5">
+                                    <h2 className="text-center mb-4 text-dark">Register</h2>
+                                    <form onSubmit={this.handleSubmit}>
+                                        <div className="mb-3">
+                                            <label htmlFor="name" className="form-label">Name</label>
+                                            <input type="text" name="name" className="form-control form-control-lg" id="name" required />
+                                        </div>
+                                        <div className="mb-3">
+                                            <label htmlFor="lastname" className="form-label">Lastname</label>
+                                            <input type="text" name="lastname" className="form-control form-control-lg" id="lastname" required />
+                                        </div>
+                                        <div className="mb-3">
+                                            <label htmlFor="birthday" className="form-label">Birthday</label>
+                                            <input type="date" name="birthday" className="form-control form-control-lg" id="birthday" required />
+                                        </div>
+                                        <div className="mb-3">
+                                            <label htmlFor="email" className="form-label">Email</label>
+                                            <input type="email" name="email" className="form-control form-control-lg" id="email" required />
+                                        </div>
+                                        <div className="mb-3">
+                                            <label htmlFor="password" className="form-label">Password</label>
+                                            <input type="password" name="password" className="form-control form-control-lg" id="password" required />
+                                        </div>
+                                        <div className="mb-3">
+                                            <label htmlFor="logkey" className="form-label">Register Key</label>
+                                            <input type="password" name="logkey" className="form-control form-control-lg" id="logkey" required />
+                                        </div>
+                                        <div className="d-grid">
+                                            <button type="submit" className="btn btn-primary btn-lg btn-block rounded-3 mt-4">Register</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div className="form-group text-left" controlid='lastname'>
-                                    <input type="text" name="lastname" className="form-control" required defaultValue={this.props.lastname} placeholder="Lastname..."></input>
-                                </div>
-                                <div className="form-group text-left" controlid='birthday'>
-                                    <input type="date" name="birthday" className="form-control" required defaultValue={this.props.birthday} placeholder="Birthday..."></input>
-                                </div>
-                                {/* <div className="form-group text-left" controlid='phone'>
-                                    <input type="text" name="phone" className="form-control" required defaultValue={this.props.phone} placeholder="Phone..."></input>
-                                </div> */}
-                                <div className="form-group text-left" controlid='email'>
-                                    <input type="email" name="email" className="form-control" required defaultValue={this.props.email} placeholder="Email..."></input>
-                                </div>
-                                <div className="form-group text-left" controlid='password'>
-                                    <input type="password" name="password" className="form-control" required defaultValue={this.props.password} placeholder="Password..."></input>
-                                </div>
-                                <div className="form-group text-left" controlid='logkey'>
-                                    <input type="password" name="logkey" className="form-control" required defaultValue={this.props.logkey} placeholder="Register key..."></input>
-                                </div>
-                                <button type="submit" className="btn btn-block btn-outline-secondary mt-2" name="register">Register</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         );
     }
 }
 
-export default Register
+export default Register;
