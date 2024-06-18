@@ -12,7 +12,7 @@ export class Ticket extends Component {
         this.fetchController = new AbortController(); 
     }
 
- componentDidMount() {
+    componentDidMount() {
         this.refreshList();
     }
 
@@ -20,7 +20,7 @@ export class Ticket extends Component {
         this.fetchController.abort();
     }
 
-   refreshList() {
+    refreshList() {
         fetch(process.env.REACT_APP_API + 'ticket', {
             signal: this.fetchController.signal 
         })
@@ -37,7 +37,7 @@ export class Ticket extends Component {
             });
     }
 
-   deleteTicket(ticketID) {
+    deleteTicket(ticketID) {
         if (window.confirm('Are you sure?')) {
             fetch(process.env.REACT_APP_API + 'ticket/' + ticketID, {
                 method: 'DELETE',
@@ -54,7 +54,7 @@ export class Ticket extends Component {
         }
     }
 
-       calculateTotalPrice() {
+    calculateTotalPrice() {
         const { tickets } = this.state;
         let totalPrice = 0;
         tickets.forEach(ticket => {
@@ -63,7 +63,7 @@ export class Ticket extends Component {
         return totalPrice.toFixed(2); 
     }
 
-   render() {
+    render() {
         const { tickets, addModalShow } = this.state;
         let addModalClose = () => this.setState({ addModalShow: false });
 
@@ -123,7 +123,4 @@ export class Ticket extends Component {
     }
 }
 
-        );
-    }
-}
 
