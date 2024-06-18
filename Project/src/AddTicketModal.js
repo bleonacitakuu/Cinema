@@ -45,7 +45,7 @@ export class AddTicketModal extends Component {
                 });
     }
 
-    handleMovieChange = (event) => {
+   handleMovieChange = (event) => {
         this.setState({ selectedMovieID: event.target.value });
     }
 
