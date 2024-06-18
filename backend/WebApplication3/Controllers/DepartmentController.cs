@@ -94,26 +94,7 @@ namespace WebApplication3.Controllers
             return new JsonResult("Updated Successfully");
         }
 
-        [HttpDelete("{id}")]
-        public JsonResult Delete(int id)
-        {
-            string query = @"
-                    DELETE FROM dbo.Department
-                    WHERE DepartmentId = @DepartmentId";
-            DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
-            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
-            {
-                myCon.Open();
-                using (SqlCommand myCommand = new SqlCommand(query, myCon))
-                {
-                    myCommand.Parameters.AddWithValue("@DepartmentId", id);
-                    using (SqlDataReader myReader = myCommand.ExecuteReader())
-                    {
-                        table.Load(myReader);
-                    }
-                }
-            }
+     
 
             return new JsonResult("Deleted Successfully");
         }
