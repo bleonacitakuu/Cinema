@@ -17,7 +17,6 @@ export class AddDepModal extends Component{
             },
             body:JSON.stringify({
                 
-                // DepartmentId:null,
                 DepartmentName:event.target.DepartmentName.value
                
 
