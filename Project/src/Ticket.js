@@ -37,7 +37,7 @@ export class Ticket extends Component {
             });
     }
 
-    deleteTicket(ticketID) {
+   deleteTicket(ticketID) {
         if (window.confirm('Are you sure?')) {
             fetch(process.env.REACT_APP_API + 'ticket/' + ticketID, {
                 method: 'DELETE',
@@ -48,7 +48,7 @@ export class Ticket extends Component {
             })
             .then(response => {
                 if (response.ok) {
-                    this.refreshList(); // Rifresko listën pas fshirjes së një bilete
+                    this.refreshList(); 
                 }
             });
         }
