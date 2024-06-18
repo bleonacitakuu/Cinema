@@ -12,12 +12,12 @@ export class Ticket extends Component {
         this.fetchController = new AbortController(); 
     }
 
-    componentDidMount() {
+ componentDidMount() {
         this.refreshList();
     }
 
     componentWillUnmount() {
-        this.fetchController.abort(); // Anulo kërkesën në rast të zhdukjes së komponentit
+        this.fetchController.abort();
     }
 
     refreshList() {
