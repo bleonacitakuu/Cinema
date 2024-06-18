@@ -81,8 +81,7 @@ export class Movie extends Component {
       "Home Alone 2" : HomeAlone2,
       "Sponge Bob" : SpongeBob
     };
-    // Add a default movie if there are not enough movies to fill 8 cards
-    const defaultMovies = [
+        const defaultMovies = [
       { MovieID: 1, Name: "Suicide Squad" },
       { MovieID: 2, Name: "Black Widow" },
       { MovieID: 3, Name: "Fast and Furious" },
