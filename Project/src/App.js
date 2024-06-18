@@ -16,7 +16,6 @@ import Login from "./pages/login/Login";
 import Dashboard from "./components/Dashboard";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-// import Register from './pages/register/Register';
 import Register from "./Register";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -46,8 +45,7 @@ function App() {
               <Route path="/Navbar" component={Navbar} />
               <Route path="/Sidebar" component={Sidebar} />
             </div>
-            {/* <PublicRoute exact path="/login" name="Login Page" component={Login} />
-                  <PublicRoute exact path="/register" name="Register Page" component={Register} /> */}
+            {/*  */}
           </Switch>
         </div>
       </div>
