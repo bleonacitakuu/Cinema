@@ -7,11 +7,12 @@ export class AddTicketModal extends Component {
         super(props);
         this.state = {
             movies: [],
-            selectedMovieID: '', // Ruajtja e ID-së së filmit të përzgjedhur
+            selectedMovieID: '', 
             Seat: '',
             Price: ''
         };
     }
+
 
     componentDidMount() {
         fetch(process.env.REACT_APP_API + 'movie')
