@@ -54,13 +54,13 @@ export class Ticket extends Component {
         }
     }
 
-    calculateTotalPrice() {
+       calculateTotalPrice() {
         const { tickets } = this.state;
         let totalPrice = 0;
         tickets.forEach(ticket => {
             totalPrice += ticket.Price;
         });
-        return totalPrice.toFixed(2); // Përmbledhja e totalit dhe rrethimi në dy presje dhjetore
+        return totalPrice.toFixed(2); 
     }
 
     render() {
