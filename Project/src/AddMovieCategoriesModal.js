@@ -7,10 +7,11 @@ export class AddMovieCategoriesModal extends Component {
     this.state = { deps: [] };
     this.state = { Categories: [] };
     this.handleSubmit = this.handleSubmit.bind(this);
-
+    // this.handleFileSelected=this.handleFileSelected.bind(this);
   }
 
-
+  // photofilename = "anonymous.png";
+  // imagesrc = process.env.REACT_APP_PHOTOPATH+this.photofilename;
 
   componentDidMount() {
     fetch(process.env.REACT_APP_API + "moviecategories")
@@ -42,7 +43,29 @@ export class AddMovieCategoriesModal extends Component {
         }
       );
   }
+  // handleFileSelected(event){
+  //     event.preventDefault();
+  //     this.photofilename=event.target.files[0].name;
+  //     const formData = new FormData();
+  //     formData.append(
+  //         "myFile",
+  //         event.target.files[0],
+  //         event.target.files[0].name
+  //     );
 
+  //     fetch(process.env.REACT_APP_API+'Employee/SaveFile',{
+  //         method:'POST',
+  //         body:formData
+  //     })
+  //     .then(res=>res.json())
+  //     .then((result)=>{
+  //         this.imagesrc=process.env.REACT_APP_PHOTOPATH+result;
+  //     },
+  //     (error)=>{
+  //         alert('Failed');
+  //     })
+
+  // }
 
   render() {
     return (
@@ -80,7 +103,10 @@ export class AddMovieCategoriesModal extends Component {
                 </Form>
               </Col>
 
-              {/* */}
+              {/* <Col sm={6}>
+                <Image width="200px" height="200px" src={this.imagesrc}/>
+                <input onChange={this.handleFileSelected} type="File"/>
+            </Col> */}
             </Row>
           </Modal.Body>
 
