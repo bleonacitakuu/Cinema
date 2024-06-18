@@ -16,7 +16,6 @@ const cardStyle = {
   color: "white",
   margin: "10px",
 };
-
 export class Movie extends Component {
   constructor(props) {
     super(props);
