@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-
-
 class Register extends Component {
     constructor(props) {
         super(props);
@@ -17,8 +15,15 @@ class Register extends Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-       
-       })
+            body: JSON.stringify({
+                name: event.target.name.value,
+                lastname: event.target.lastname.value,
+                birthday: event.target.birthday.value,
+                email: event.target.email.value,
+                password: event.target.password.value,
+                logkey: event.target.logkey.value,
+            })
+        })
             .then(res => res.json())
             .then((result) => {
                 alert(result);
@@ -27,6 +32,7 @@ class Register extends Component {
                     alert('Failed');
                 });
     }
+
     render() {
         return (
             <section id="contact" className="py-5 h-100">
