@@ -1,0 +1,30 @@
+/* MovieCategories.css */
+
+.section-title {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .card {
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .table {
+    margin-bottom: 0;
+  }
+  
+  .thead-dark {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .thead-light {
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
