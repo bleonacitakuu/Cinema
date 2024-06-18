@@ -10,7 +10,6 @@ export class Events extends Component {
     this.refreshList = this.refreshList.bind(this);
     this.delete = this.delete.bind(this);
   }
-
   componentDidMount() {
     this.refreshList();
   }
