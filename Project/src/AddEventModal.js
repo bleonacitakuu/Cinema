@@ -25,8 +25,8 @@ export class AddEventModal extends Component {
       .then(
         (result) => {
           alert(result);
-          this.props.onHide(); // Close modal after successful submission
-          this.props.refreshList(); // Refresh list in parent component
+          this.props.onHide(); 
+          this.props.refreshList(); 
         },
         (error) => {
           alert("Failed to add event");
