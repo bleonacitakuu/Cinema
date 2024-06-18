@@ -21,7 +21,6 @@ class Register extends Component {
                 name: event.target.name.value,
                 lastname: event.target.lastname.value,
                 birthday: event.target.birthday.value,
-                // phone: event.target.phone.value,
                 email: event.target.email.value,
                 password: event.target.password.value,
                 logkey: event.target.logkey.value,
