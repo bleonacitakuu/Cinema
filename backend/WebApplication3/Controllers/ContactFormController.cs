@@ -18,7 +18,7 @@ namespace WebApplication3.Controllers
             _configuration = configuration;
         }
 
-        // GET: api/contactform
+        
         [HttpGet]
         public JsonResult Get()
         {
@@ -41,7 +41,7 @@ namespace WebApplication3.Controllers
             return new JsonResult(table);
         }
 
-        // POST: api/contactform
+        
         [HttpPost]
         public JsonResult Post(ContactForm contactForm)
         {
@@ -68,7 +68,7 @@ namespace WebApplication3.Controllers
             return new JsonResult("Added Successfully");
         }
 
-        // PUT: api/contactform/5
+      
         [HttpPut("{id}")]
         public JsonResult Put(int id, ContactForm contactForm)
         {
@@ -99,7 +99,6 @@ namespace WebApplication3.Controllers
             return new JsonResult("Updated Successfully");
         }
 
-        // DELETE: api/contactform/5
         [HttpDelete("{id}")]
         public JsonResult Delete(int id)
         {
