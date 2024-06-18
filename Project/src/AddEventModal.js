@@ -116,3 +116,4 @@ export class AddEventModal extends Component {
     );
   }
 }
+
