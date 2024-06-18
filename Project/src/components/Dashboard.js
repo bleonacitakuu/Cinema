@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import PieChart from "./PieChart";
+import Sidebar from './Sidebar';
+
 
 const Dashboard = () => {
   const [record, setRecord] = useState([]);
+
 
   const getData = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -13,7 +16,6 @@ const Dashboard = () => {
   useEffect(() => {
     getData();
   }, []);
-
   return (
     <div className="col main pt-5 mt-3">
       <nav aria-label="breadcrumb">
