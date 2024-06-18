@@ -10,9 +10,11 @@ export class Events extends Component {
     this.refreshList = this.refreshList.bind(this);
     this.delete = this.delete.bind(this);
   }
-  componentDidMount() {
+
+    componentDidMount() {
     this.refreshList();
   }
+
 
   refreshList() {
     fetch(process.env.REACT_APP_API + "events")
