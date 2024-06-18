@@ -9,7 +9,7 @@ export class Ticket extends Component {
             tickets: [],
             addModalShow: false
         };
-        this.fetchController = new AbortController(); // Krijo controller për anulimin e kërkesës
+        this.fetchController = new AbortController(); 
     }
 
     componentDidMount() {
