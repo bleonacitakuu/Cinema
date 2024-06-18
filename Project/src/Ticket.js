@@ -63,7 +63,7 @@ export class Ticket extends Component {
         return totalPrice.toFixed(2); 
     }
 
-    render() {
+   render() {
         const { tickets, addModalShow } = this.state;
         let addModalClose = () => this.setState({ addModalShow: false });
 
@@ -119,6 +119,10 @@ export class Ticket extends Component {
                     <AddTicketModal show={addModalShow} onHide={addModalClose} />
                 </ButtonToolbar>
             </div>
+        );
+    }
+}
+
         );
     }
 }
