@@ -38,7 +38,7 @@ export class AddEventModal extends Component {
     const file = event.target.files[0];
     this.setState({
       Image: file,
-      ImageSrc: URL.createObjectURL(file), // Display preview of selected image
+      ImageSrc: URL.createObjectURL(file), 
     });
   }
 
