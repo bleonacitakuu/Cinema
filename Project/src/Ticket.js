@@ -20,9 +20,9 @@ export class Ticket extends Component {
         this.fetchController.abort();
     }
 
-    refreshList() {
+   refreshList() {
         fetch(process.env.REACT_APP_API + 'ticket', {
-            signal: this.fetchController.signal // Përdor controller-in për anulimin e kërkesës
+            signal: this.fetchController.signal 
         })
             .then(response => response.json())
             .then(data => {
