@@ -1,2 +1,1 @@
-"# Cinema" 
-#Projekti ne Lab Course
+"#Projekti ne Lab Course"
