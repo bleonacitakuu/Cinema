@@ -13,7 +13,6 @@ export class AddTicketModal extends Component {
         };
     }
 
-
     componentDidMount() {
         fetch(process.env.REACT_APP_API + 'movie')
             .then(response => response.json())
@@ -45,7 +44,7 @@ export class AddTicketModal extends Component {
                 });
     }
 
-   handleMovieChange = (event) => {
+    handleMovieChange = (event) => {
         this.setState({ selectedMovieID: event.target.value });
     }
 
