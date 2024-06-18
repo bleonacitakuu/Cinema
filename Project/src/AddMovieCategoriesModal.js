@@ -7,7 +7,7 @@ export class AddMovieCategoriesModal extends Component {
     this.state = { deps: [] };
     this.state = { Categories: [] };
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.handleFileSelected=this.handleFileSelected.bind(this);
+
   }
 
   // photofilename = "anonymous.png";
