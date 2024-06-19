@@ -99,7 +99,6 @@ export class Department extends Component{
                             </tr>)}
                     </tbody>
                 </Table>
-
                 <ButtonToolbar>
                     <Button variant='primary'
                         onClick={() => this.setState({addModalShow:true})}>
