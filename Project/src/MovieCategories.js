@@ -7,7 +7,7 @@ export class MovieCategories extends Component {
   constructor(props) {
     super(props);
     this.state = { Categories: [], addModalShow: false, editModalShow: false };
-    this.fetchController = new AbortController(); // Krijo controller për anulimin e kërkesës
+    this.fetchController = new AbortController(); 
   }
 
   componentDidMount() {
