@@ -29,8 +29,6 @@ export class AddDepModal extends Component{
             alert('Failed');
         })
     }
-
-   
     render(){
         return (
             <div className="container">
