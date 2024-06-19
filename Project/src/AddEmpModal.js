@@ -135,9 +135,7 @@ centered
     </Modal.Footer>
 
 </Modal>
-
             </div>
         )
     }
-
 }
