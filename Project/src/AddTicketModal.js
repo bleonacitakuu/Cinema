@@ -43,11 +43,9 @@ export class AddTicketModal extends Component {
                     alert('Failed');
                 });
     }
-
     handleMovieChange = (event) => {
         this.setState({ selectedMovieID: event.target.value });
     }
-
     render() {
         return (
             <div className="container">
