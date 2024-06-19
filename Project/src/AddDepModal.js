@@ -19,7 +19,6 @@ export class AddDepModal extends Component{
                 
                 DepartmentName:event.target.DepartmentName.value
                
-
             })
         })
         .then(res=>res.json())
