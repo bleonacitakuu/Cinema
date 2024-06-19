@@ -28,7 +28,7 @@ export class MovieCategories extends Component {
       })
       .catch((error) => {
         if (error.name === "AbortError") {
-          console.log("Fetch aborted"); // Mund të shtoni rastet kur kërkesa anulohet
+          console.log("Fetch aborted"); 
         } else {
           console.error("Fetch error:", error);
         }
