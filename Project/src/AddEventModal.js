@@ -9,7 +9,6 @@ export class AddEventModal extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleFileSelected = this.handleFileSelected.bind(this);
   }
-
   handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData();
