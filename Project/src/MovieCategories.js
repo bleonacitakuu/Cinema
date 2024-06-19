@@ -20,7 +20,7 @@ export class MovieCategories extends Component {
 
   refreshList() {
     fetch(process.env.REACT_APP_API + "moviecategories", {
-      signal: this.fetchController.signal, // Përdor controller-in për anulimin e kërkesës
+      signal: this.fetchController.signal, 
     })
       .then((response) => response.json())
       .then((data) => {
