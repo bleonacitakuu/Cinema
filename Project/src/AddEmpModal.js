@@ -112,8 +112,7 @@ centered
                         required
                         placeholder="DateOfJoining"
                         />
-                       
-                        
+                          
                     </Form.Group>
 
                     <Form.Group>
