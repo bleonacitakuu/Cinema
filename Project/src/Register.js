@@ -6,7 +6,6 @@ class Register extends Component {
         this.state = { regs: [] };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
     handleSubmit(event) {
         event.preventDefault();
         fetch(process.env.REACT_APP_API + 'register', {
