@@ -46,7 +46,6 @@ export class AddEmpModal extends Component{
         })
     }
 
-
     handleFileSelected(event){
         event.preventDefault();
         this.photofilename=event.target.files[0].name;
