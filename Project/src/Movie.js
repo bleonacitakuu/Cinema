@@ -185,5 +185,3 @@ export class Movie extends Component {
     );
   }
 }
-
-
