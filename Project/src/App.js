@@ -47,7 +47,8 @@ function App() {
               <Route path="/Navbar" component={Navbar} />
               <Route path="/Sidebar" component={Sidebar} />
             </div>
-            {/* */}
+            {/* <PublicRoute exact path="/login" name="Login Page" component={Login} />
+                  <PublicRoute exact path="/register" name="Register Page" component={Register} />  */}
           </Switch>
         </div>
       </div>
