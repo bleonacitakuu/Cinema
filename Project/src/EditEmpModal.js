@@ -146,9 +146,7 @@ centered
     <Modal.Footer>
         <Button variant="danger" onClick={this.props.onHide}>Close</Button>
     </Modal.Footer>
-
 </Modal>
-
             </div>
         )
     }
