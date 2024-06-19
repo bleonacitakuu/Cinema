@@ -103,12 +103,7 @@ export class AddMovieCategoriesModal extends Component {
                 </Form>
               </Col>
 
-              {/* <Col sm={6}>
-                <Image width="200px" height="200px" src={this.imagesrc}/>
-                <input onChange={this.handleFileSelected} type="File"/>
-            </Col> */}
-            </Row>
-          </Modal.Body>
+              
 
           <Modal.Footer>
             <Button variant="danger" onClick={this.props.onHide}>
