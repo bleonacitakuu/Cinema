@@ -16,7 +16,7 @@ import Login from "./pages/login/Login";
 import Dashboard from "./components/Dashboard";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-// import Register from './pages/register/Register';
+
 import Register from "./Register";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
