@@ -81,8 +81,7 @@ export class Employee extends Component{
         photofilename={photofilename}
         doj={doj}
         />
-</ButtonToolbar>
-
+         </ButtonToolbar>
                                 </td>
 
                             </tr>)}
