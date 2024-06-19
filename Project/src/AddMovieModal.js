@@ -9,7 +9,8 @@ export class AddMovieModal extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.handleFileSelected=this.handleFileSelected.bind(this);
   }
-
+  // photofilename = "anonymous.png";
+  // imagesrc = process.env.REACT_APP_PHOTOPATH+this.photofilename;
 
 
   componentDidMount() {
