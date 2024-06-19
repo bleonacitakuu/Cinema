@@ -6,7 +6,6 @@ export class AddDepModal extends Component{
         super(props);
         this.handleSubmit=this.handleSubmit.bind(this);
     }
-    
     handleSubmit(event){
         event.preventDefault();
         fetch(process.env.REACT_APP_API+'department',{
