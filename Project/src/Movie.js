@@ -82,8 +82,7 @@ export class Movie extends Component {
       "Home Alone 2" : HomeAlone2,
       "Sponge Bob" : SpongeBob
     };
-
-    
+  
     const defaultMovies = [
       { MovieID: 1, Name: "Suicide Squad" },
       { MovieID: 2, Name: "Black Widow" },
