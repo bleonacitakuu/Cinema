@@ -13,13 +13,6 @@ export class AddMovieCategoriesModal extends Component {
   // imagesrc = process.env.REACT_APP_PHOTOPATH+this.photofilename;
 
 
-  componentDidMount() {
-    fetch(process.env.REACT_APP_API + "moviecategories")
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({ Categories: data });
-      });
-  }
 
   handleSubmit(event) {
     event.preventDefault();
