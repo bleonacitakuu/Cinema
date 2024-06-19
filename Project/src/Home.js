@@ -62,7 +62,6 @@ export class Home extends Component {
       ],
     };
   }
-
   render() {
     const { events } = this.state;
     return (
