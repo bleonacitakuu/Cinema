@@ -89,3 +89,5 @@ export class EditMovieCategoriesModal extends Component {
     );
   }
 }
+
+
