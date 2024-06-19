@@ -15,7 +15,7 @@ export class MovieCategories extends Component {
   }
 
   componentWillUnmount() {
-    this.fetchController.abort(); // Anulo kërkesën në rast të zhdukjes së komponentit
+    this.fetchController.abort(); 
   }
 
   refreshList() {
