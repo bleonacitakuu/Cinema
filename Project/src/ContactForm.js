@@ -79,7 +79,6 @@ class ContactForm extends Component {
           <tbody>{this.renderTableData()}</tbody>
         </Table>
 
-  
         <ButtonToolbar>
           <Button
             variant="primary"
