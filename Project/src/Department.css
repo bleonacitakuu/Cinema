@@ -1,0 +1,36 @@
+.department-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.department-heading {
+  color: #333;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.department-table {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.department-table th,
+.department-table td {
+  text-align: center;
+  padding: 12px;
+}
+
+.department-button-toolbar {
+  margin-top: 20px;
+  text-align: center;
+}
