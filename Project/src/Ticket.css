@@ -1,0 +1,59 @@
+.ticket-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thead-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table tfoot td {
+  font-weight: bold;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.large-table {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.2em; 
+}
+
+.table td, .table th {
+  /*padding: 1.5rem;  */
+  padding: 8px;
+  text-align: left;
+}
+
+.container {
+  max-width: 95%; 
+}
+
+.thead-dark th {
+  font-size: 1.1em; 
+}
+
+.table {
+  font-size: 1.1em; 
+}
